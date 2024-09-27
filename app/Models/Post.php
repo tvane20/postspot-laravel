@@ -18,6 +18,8 @@ class Post extends Model
         'title',   // Titre du post
         'content', // Contenu du post
         'status',  // Statut (brouillon ou publié)
+        'category_id',
+        'user_id',
     ];
 
     /**
@@ -45,4 +47,22 @@ class Post extends Model
     {
         return $this->status === 'publié';
     }
+
+    public function publish()
+{
+    $this->status = 'publié';
+    $this->save();
+}
+
+
+    // app/Models/Post.php
+public function category()
+{
+    return $this->belongsTo(Category::class);
+}
+public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 }
