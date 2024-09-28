@@ -1,70 +1,49 @@
-<<<<<<< HEAD
-# postspot-laravel
-=======
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Présentation du Projet
+Nom du Projet : PostSpot
+Ce projet est une application web de gestion de posts développée avec Laravel, un framework PHP robuste et moderne. L'objectif principal de cette application est de permettre aux utilisateurs de créer, gérer et publier des posts tout en organisant ces articles par catégories.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Fonctionnalités Principales :
+Gestion des posts : Les utilisateurs peuvent créer, lire, modifier et supprimer des posts. Chaque post peut contenir un titre, un contenu et une catégorie pour améliorer la recherche et l'organisation.
 
-## About Laravel
+Gestion des Catégories : Les post peuvent être classés par catégories, permettant ainsi une meilleure organisation du contenu. Les utilisateurs peuvent ajouter, modifier ou supprimer des catégories.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Contrôle des Accès : Grâce à un système de rôles et permissions, différents types d'utilisateurs (Admin, Auteur, Visiteur) peuvent être définis, chacun ayant des droits spécifiques concernant la création et la gestion des posts et des catégories.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Interface Utilisateur Ergonomique : L'application utilise tailwind pour offrir une interface utilisateur responsive et conviviale, facilitant la navigation et l'interaction avec le contenu.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Authentification des Utilisateurs avec Breeze: Les utilisateurs peuvent s'inscrire et se connecter pour accéder à des fonctionnalités personnalisées, en assurant la sécurité et la confidentialité des données.
 
-## Learning Laravel
+Technologies Utilisées :
+Laravel : Framework PHP pour le développement web.
+tailwind : Framework CSS pour le développement d'interfaces responsives.
+MySQL : Base de données pour stocker les données de l'application.
+Installation :
+Pour installer ce projet sur votre machine locale, veuillez suivre les instructions suivantes (ajouter les instructions d'installation ici).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Voici un résumé des points réalisés , en attendant les nouveautés :
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
->>>>>>> 3f0b0ae (Set up a fresh Laravel app)
+1. Mise en place du projet
+Création d’un projet Laravel 11.
+Configuration initiale du projet.
+2. CRUD pour les Posts
+Création des modèles, contrôleurs et vues pour la gestion des posts.
+Implémentation des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) pour les posts.
+Mise en place des validations nécessaires pour les données des posts.
+3. Gestion des Catégories
+Création des modèles, contrôleurs et vues pour la gestion des catégories.
+Implémentation du CRUD pour les catégories.
+Association des posts à des catégories, permettant à chaque post d'appartenir à une catégorie spécifique.
+4. Gestion des Rôles et Permissions
+Mise en place des rôles (Admin, Auteur, Visiteur) avec Spatie.
+Définition des permissions spécifiques pour chaque rôle concernant :
+        Création de posts.
+        Modification de posts.
+        Publication et suppression de posts.
+        Création et gestion de catégories.
+5. Style et Interface Utilisateur
+Réécriture des pages HTML pour un style simple, ergonomique et unifié sur toutes les pages.
+Utilisation de tailwind pour le stylisme .
+6. Gestion des Sessions et Authentification
+Implémentation de l'authentification pour permettre aux utilisateurs de se connecter et de s'inscrire.
+Gestion des sessions pour les utilisateurs authentifiés.
